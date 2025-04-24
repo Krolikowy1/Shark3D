@@ -1,0 +1,116 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale>=1.0">
+    <title>Konto - Shark3D.PL | Sklep z drukiem 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="Shark3Dred.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="products.html">Produkty</a></li>
+                <li><a href="">O nas</a></li>
+                <li><a href="">Kontakt</a></li>
+                <li><a href="account.html">Konto</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+        <img src="menu.png" class="menu-icon" 
+        onclick="menutoggle()">
+    </div>
+  </div>
+
+<!--account-page-->
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="Shark3Dwhite.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Zaloguj się</span>
+                        <span onclick="register()">Zarejestruj się</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Nazwa Użytkownika">
+                        <input type="password" placeholder="Hasło">
+                        <button type="submit" class="btn">Zaloguj się</button>
+                        <a href="">Zapomniałem hasła</a>
+                    </form>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Nazwa Użytkownika">
+                        <input type="email" placeholder="E-Mail">
+                        <input type="password" placeholder="Hasło">
+                        <button type="submit" class="btn">Zarejestruj się</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-----------js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+        
+    </script>
+<!-----------js for toggle Form-->
+    <script>
+
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+        function register(){
+
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+        }
+        function login(){
+            
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale>=1.0">
+    <title>Koszyk - Shark3D.PL | Sklep z drukiem 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="Shark3Dred.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="products.html">Produkty</a></li>
+                <li><a href="">O nas</a></li>
+                <li><a href="">Kontakt</a></li>
+                <li><a href="account.html">Konto</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+        <img src="menu.png" class="menu-icon" 
+        onclick="menutoggle()">
+    </div>
+  </div>
+
+<!--cart items details
+
+<div class="small-container cart-page">
+
+    <table>
+        <tr>
+            <th>Produkt</th>
+            <th>Ilość</th>
+            <th>Suma częściowa</th>
+        </tr>-->
+                        <small id="cart-info2">Koszyk nie jest dostępny,<br>ponieważ aktualnie strona działa jako cennik.</small>
+        <!--<tr>
+            <td>
+                <div class="cart-info">
+                    <img src="keyrambit galaxy fiolet.png">
+                    <div>
+                        <h5>Keyrambit Galaxy Fiolet</h5>
+                        <small>Cena: 12,50 PLN</small>
+                        <br>
+                        <a href="">Usuń</a>
+                    </div>
+                </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>12,50 PLN</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="rekinek galaxy fiolet.jpg">
+                    <div>
+                        <h5>Keyrambit Galaxy Fiolet</h5>
+                        <small>Cena: 12,50 PLN</small>
+                        <br>
+                        <a href="">Usuń</a>
+                    </div>
+                </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>12,50 PLN</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="keyrambit zielony.jpg">
+                    <div>
+                        <h5>Keyrambit Galaxy Fiolet</h5>
+                        <small>Cena: 12,50 PLN</small>
+                        <br>
+                        <a href="">Usuń</a>
+                    </div>
+                </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>12,50 PLN</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="rekinek zielony.jpg">
+                    <div>
+                        <h5>Keyrambit Galaxy Fiolet</h5>
+                        <small>Cena: 12,50 PLN</small>
+                        <br>
+                        <a href="">Usuń</a>
+                    </div>
+                </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>12,50 PLN</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+
+        <table>
+            <tr>
+                <td>Cena częściowa</td>
+                <td>00,00 PLN</td>
+            </tr>
+            <tr>
+                <td>Dostawa</td>
+                <td>00,00 PLN</td>
+            </tr>
+            <tr>
+                <td>Cena końcowa</td>
+                <td>00,00 PLN</td>
+            </tr>
+        </table>
+
+    </div> 
+
+
+
+
+</div>-->
+
+
+
+
+
+
+<!-----------js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+        
+    </script>
+
+</body>
+</html>
